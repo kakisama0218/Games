@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mojiex;
+using System;
 
 public class DataModel
 {
     private Data m_data;
-  public DataModel(Data data)
+    public string Id => m_data.Id;
+    public DataModel(Data data)
     {
         m_data = data;
 
@@ -52,9 +54,9 @@ public class DataModel
     {
         m_data.ItemID.Remove(itemID);
     }
-    public long getTime()
+    public DateTime GetTime()
     {
-        return m_data.Time;
+        return TimeUtils.GetTime(m_data.Time);
     }
     public void setTime(long Time)
     {
@@ -64,4 +66,11 @@ public class DataModel
     {
        // DataStatic.Inst.saveManager.Save(m_data);
     }
+
+    public void CopyFrom(DataModel dataModel)
+    {
+        m_data.CopyFrom(dataModel.m_data);
+    }
+
+    public Data GetData() { return m_data; }
 }

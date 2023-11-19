@@ -3,6 +3,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
+/[Ll]ogs/
 /Assets/AssetStoreTools*
 .vs/
 /Out/Android/
@@ -11,6 +12,7 @@
 /UnityProject/Framework/Temp/UnityLockfile
 
 *Library/
+*Logs/
 *Temp/
 DesignDocs/
 *Examples/

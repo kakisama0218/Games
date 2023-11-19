@@ -151,7 +151,7 @@ RectTransform:
   m_GameObject: {fileID: 195784100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4976, y: 2.4976, z: 2.4976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408776156}
   m_Father: {fileID: 1688900594}
@@ -160,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -424}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 400, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195784102
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 195784100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7e2c735a2523d4abe6be240bf47aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7169812, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.7176471, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -218,6 +218,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pressSeconds: 0.15
+  onLongPressBegin:
+    m_PersistentCalls:
+      m_Calls: []
+  onLongPressEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickDis:
+    m_PersistentCalls:
+      m_Calls: []
+  animationType: 1
+  targetScale: 0.9
+  btnAnimateTime: 0.15
 --- !u!114 &195784103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +697,7 @@ RectTransform:
   m_GameObject: {fileID: 474466578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4976, y: 2.4976, z: 2.4976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 304499052}
   m_Father: {fileID: 1688900594}
@@ -693,7 +706,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -277}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 400, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474466580
 MonoBehaviour:
@@ -704,7 +717,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 474466578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7e2c735a2523d4abe6be240bf47aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -717,7 +730,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7169812, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.7176471, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -751,6 +764,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pressSeconds: 0.15
+  onLongPressBegin:
+    m_PersistentCalls:
+      m_Calls: []
+  onLongPressEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickDis:
+    m_PersistentCalls:
+      m_Calls: []
+  animationType: 1
+  targetScale: 0.9
+  btnAnimateTime: 0.15
 --- !u!114 &474466581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6475,6 +6501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 219306550}
   settings: {fileID: 1500075238}
+  version: {fileID: 429980595}
 --- !u!1 &1799757620
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,7 +6632,7 @@ RectTransform:
   m_GameObject: {fileID: 1825638407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4976, y: 2.4976, z: 2.4976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249397823}
   m_Father: {fileID: 1688900594}
@@ -6614,7 +6641,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -136}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 400, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825638409
 MonoBehaviour:
@@ -6625,7 +6652,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825638407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7e2c735a2523d4abe6be240bf47aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -6638,7 +6665,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7169812, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.7176471, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6672,6 +6699,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pressSeconds: 0.15
+  onLongPressBegin:
+    m_PersistentCalls:
+      m_Calls: []
+  onLongPressEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickDis:
+    m_PersistentCalls:
+      m_Calls: []
+  animationType: 1
+  targetScale: 0.9
+  btnAnimateTime: 0.15
 --- !u!114 &1825638410
 MonoBehaviour:
   m_ObjectHideFlags: 0

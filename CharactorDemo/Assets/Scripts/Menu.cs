@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using Mojiex;
+using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class Menu : MonoBehaviour
 {
@@ -53,6 +55,7 @@ public class Menu : MonoBehaviour
     }
     public void BackMenu()
     {
+        DataStatic.Inst.Restart();
         SceneManager.LoadScene(0, LoadSceneMode.Single);
         Time.timeScale = 1f;
     }

@@ -10,14 +10,13 @@ public class DataList:BaseSaveInfo
     public override void InitDefault()
     {
         Data = new List<Data>();
-       /* for (int i = 0; i < 3; i++)
-        {
-            Data.Add(new Data());
-        }*/
     }
-    public void AddNewData()
+    public Data AddNewData(string dataId)
     {
-        Data.Add(new Data());
+        var data = new Data();
+        data.Id = dataId;
+        Data.Add(data);
+        return data;
     }
     public void RemoveData(Data data)
     {

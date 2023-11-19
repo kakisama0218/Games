@@ -23,7 +23,9 @@ public class GameRestart : MonoBehaviour
         //DataStatic.Inst.SetDataID(1);
         //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         //DataStatic.Inst.dataModel.removeItem(21);
-        DataStatic.Inst.SetDataID(DataSaveNum.GetComponent<SaveDataNum>().DataNum);
+        //DataStatic.Inst.SetDataID(DataSaveNum.GetComponent<SaveDataNum>().DataNum);
+        DataStatic.Inst.Restart();
+        DataStatic.Inst.UpdateCurrentDataTime();
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 
     }
